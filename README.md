@@ -2,6 +2,11 @@
 
 This is a general map of pottery and ceramic artists in Minnesota.  
 
+### Background
+
+> Mingei is defined as the folk art of the common people, and Mingei-Sota subsequently refers to a collective of Minnesota potters who studied under Warren MacKenzie and believe, as he does, that a pot should be appreciated for what it is and not who made it.
+-- [Holly Goring](https://ceramicartsnetwork.org/pottery-making-illustrated/ceramic-art-and-artists/ceramic-artists/editors-note-mingei-sota/)  
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
