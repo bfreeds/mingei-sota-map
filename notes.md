@@ -57,4 +57,17 @@
     - Updated Makefile with the steps to get `data/flow.geojson`.  *Need to figure out why make is running all the steps when the files already exist*
     - Fix projection errors by specifying utm 15 when importing into postgis (and transform to 4326)
     - Try default tippecanoe vector tile generation
-      - `tippecanoe
+      - `tippecanoe -o flow.mbtiles -zg --drop-densest-as-needed flow.geojson`
+      - Upload to Mapbox to view the resulting tileset:
+        - Zoom 8.7 Looks Fine
+        - ![z8.7](./images/tippecanoe_initial_z8.7.png)
+        - Zoom 7.92 Too simplified
+        - ![z7.92](./images/tippecanoe_initial_z7.92.png)
+        - Zoom 6.04 Much too simplified
+        - ![z7.92](./images/tippecanoe_initial_z6.04.png)
+        - Versus the geomorphology that we can discern when viewing the raw dataset in QGIS:
+        - ![raw_qgis](./images/qgis_raw_dataset.png)
+- Clean up unstaged commits, push work up to Github.
+
+**Next Steps**
+- Play around with tippecanoe to find the right balance between storage efficiency and visual output.
